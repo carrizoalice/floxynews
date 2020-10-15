@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body{
+  font-family: 'Exo 2', sans-serif;
+}
+.nav-fxy{    
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: rgb(129, 129, 129)!important;
+  background-color: #28A09D;
+}
+
+.logo-font{
+  font-weight: 900;
+}
+.container{
+  max-width: 1500px !important;
+}
+
+.container-fluid{
+  margin: 0!important;
+  padding: 0!important;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.footer{
+  color: #fff;
+  background-color: #2E353F;
+  padding: 35px;
+  border-top: 3px solid;
+  border-color: #B4378C;
+}
+
+.footer-menu{
+  padding: 15px;
+}
+
+.footer-base{
+  border-top: 1px solid;
+  border-color: #fff;
+  padding: 15px;
+}
+.footer-logo{
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.header-weather{
+  color: #fff;
+  font-weight: 100;
+}
+.clime{
+  display: flex;
+  text-align: center;
+}
+
+.temp{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;  
+}
+
+.city{
+  font-size: 20px;
+  font-weight: 300;
+  position: absolute;
+  margin-top: 39px;
+}
+
+.news-section{
+  margin-top: 82px;
+  padding: 15px;
+}
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-toggler {
+      display: block;
+    }  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
