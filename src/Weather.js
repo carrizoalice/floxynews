@@ -4,10 +4,10 @@ import 'flexbox-react/dist/flexboxgrid.min.css';
 
 const Weather = ({name, temp, icon}) => (      
           <div className="row header-weather middle-xs">            
-              <div className="col-2 offset-3">
+              <div className="col-4 text-center">
                   <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="{name}"/>
               </div>               
-              <div className="col-7 clime">
+              <div className="col-8 clime">
                 <span className="col temp">{temp}</span>
                 <span className="col city">{name}</span>
               </div>              

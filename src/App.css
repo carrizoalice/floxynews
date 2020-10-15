@@ -4,6 +4,8 @@
 body{
   font-family: 'Exo 2', sans-serif;
 }
+
+
 .nav-fxy{    
   position: fixed;
   top: 0;
@@ -12,13 +14,14 @@ body{
   z-index: 1030;
   color: rgb(129, 129, 129)!important;
   background-color: #28A09D;
+  height: 90px;
 }
 
 .logo-font{
   font-weight: 900;
 }
 .container{
-  max-width: 1500px !important;
+  max-width: 1700px !important;
 }
 
 .container-fluid{
@@ -57,22 +60,32 @@ body{
   color: #fff;
   font-weight: 100;
 }
-.clime{
-  display: flex;
+.clime{  
   text-align: center;
 }
 
-.temp{
+span.temp{
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 20px;  
+  display: block;
+  /* margin-bottom: 20px;   */
 }
 
-.city{
+span.city{
   font-size: 20px;
   font-weight: 300;
-  position: absolute;
-  margin-top: 39px;
+  /* position: absolute;
+  margin-top: 39px; */
+}
+
+.col-transit{
+  border-right: 1px solid #fff; 
+  padding: 6px;
+}
+
+.header-transit{
+  width: 50px;
+  height: auto;
 }
 
 .news-section{
@@ -86,37 +99,6 @@ body{
     }  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

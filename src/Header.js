@@ -13,8 +13,11 @@ function Header(props){
                 <div className="logo col-4 justify-content-center">
                     <a href="#" className="navbar-brand"><h1 className="logo-font">{props.name}</h1></a>
                 </div>
-                <div className="wheather col-4">
-                <WeatherContainer />
+                <div className="col-1 text-center col-transit">
+                     <img src="assets/transito.png" alt="transito" className="header-transit"/>
+                </div>               
+                <div className="wheather col-3">
+                    <WeatherContainer />
                 </div> 
             </div> 
                        
