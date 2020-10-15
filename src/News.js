@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // export default App;
 const News = ({name, urlToImage, content, publishedAt, title, description}) => (      
-          <div className="col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4 align-items-stretch">
+          <div className="col-sm-6 col-md-4 col-lg-4 col-xl-3 align-items-stretch">
             <div className="card">
               <div className="card-img-cont">
                 <img className="card-img-top" src={urlToImage} alt={name}/> 
@@ -27,3 +27,5 @@ const News = ({name, urlToImage, content, publishedAt, title, description}) => (
 )                        
 
 export default News
+
+

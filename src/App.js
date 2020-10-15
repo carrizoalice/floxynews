@@ -3,6 +3,7 @@ import Header from './Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NewsContainer from './NewsContainer';
 import Footer from './Footer'
+import Subheader from './Subheader'
 
 // const App = ({name, urlToImage, content, publishedAt, title, description}) => (      
 //           <div className="col-sm-6 col-md-4 col-lg-4 col-xl-3 mt-4 align-items-stretch">
@@ -23,14 +24,22 @@ import Footer from './Footer'
 function App(){
   return (
     <div className="app">
-      <Header name="Floxy News"/>      
+      <Header name="Floxy News"/>   
+      <Subheader/>    
       <section className="news-section">
         <div className="container">
-          <div className="row mt4">
-            <NewsContainer />
+          <div className="col-12 col-lg-9 news">
+            <div className="row">
+              <NewsContainer />
+            </div>
+          </div>
+          <div className="col-12 col-lg-3 sidebar">
+            <div className="row">
+                <div><img src="assets/banner_300_x_600_sidebar.gif"/></div>
+            </div>
           </div>
         </div>
-      </section>      
+      </section>    
       <Footer name="Floxy News"/>
     </div>
   );

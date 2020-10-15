@@ -13,7 +13,7 @@ body{
   left: 0;
   z-index: 1030;
   color: rgb(129, 129, 129)!important;
-  background-color: #28A09D;
+  background-color: #ff004f;
   height: 90px;
 }
 
@@ -36,10 +36,11 @@ body{
 
 .footer{
   color: #fff;
-  background-color: #2E353F;
+  background-color: #0e0e0e;
   padding: 35px;
   border-top: 3px solid;
   border-color: #B4378C;
+  clear: both;
 }
 
 .footer-menu{
@@ -88,14 +89,25 @@ span.city{
   height: auto;
 }
 
+.news{
+  float: left;
+}
+
+.sidebar{
+  /* background-color: #ccc; */
+  float: left;
+}
+
 .news-section{
-  margin-top: 82px;
+  margin-top: 2px;
   padding: 15px;
 }
 
 @media (min-width: 992px){
   .navbar-expand-lg .navbar-toggler {
       display: block;
+      float: left;
+      margin-right: 15px;
     }  
 }
 
