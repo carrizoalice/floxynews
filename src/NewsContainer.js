@@ -1,5 +1,6 @@
 import React from 'react'
 import News from './News'
+import { getNewsGobAr } from './services/news'
 
 class NewsContainer extends React.Component{
     constructor(props){
@@ -9,10 +10,9 @@ class NewsContainer extends React.Component{
             news: ['0'],
         }
     }  
-    componentDidMount(){
-        fetch('http://newsapi.org/v2/top-headlines?sources=google-news-ar&apiKey=47e220d319514589833c444653c15ffc')
-        .then(res => res.json())
-        .then(newsJson => this.setState({news: newsJson.articles}))
+    async componentDidMount(){
+        const responseJson = await getNewsGobAr()
+        this.setState({news: responseJson.articles})
     }
 
     render(){
@@ -27,7 +27,8 @@ class NewsContainer extends React.Component{
         title = {news.title}
         description = {news.description}
         key={news.generatorID}/>)
-        )                 
+        )       
+        
     }
     
 }
