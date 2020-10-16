@@ -1,5 +1,6 @@
 import React from 'react'
 import Weather from './Weather'
+import API_KEY_WEATHER from './config_keys_weather'
 
 class WeatherContainer extends React.Component{
     constructor(props){
@@ -12,7 +13,8 @@ class WeatherContainer extends React.Component{
         }
     }  
     componentDidMount(){
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=Buenos Aires, AR&appid=466ab881dcf2ea1da8075b9242ecbd22')
+        const api_weather = API_KEY_WEATHER
+        fetch(`http://api.openweathermap.org/data/2.5/weather?q=Buenos Aires, AR&appid=${api_weather}`)
         .then(res => res.json())
         .then(ClimeJson => this.setState({clime: ClimeJson, temp: ClimeJson.main, icon: ClimeJson.weather}))
     }

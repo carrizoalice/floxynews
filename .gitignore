@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# api keys
+config_keys.js
+config_keys_weather.js

@@ -2,6 +2,7 @@ import React from 'react'
 import News from './News'
 import { getNewsGobAr } from './services/news'
 
+
 class NewsContainer extends React.Component{
     constructor(props){
         super(props)
