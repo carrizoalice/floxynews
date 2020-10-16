@@ -1,0 +1,14 @@
+.subscription{
+    background-color: #ededed;
+    clear: both;
+    padding: 0px 25px 0px 25px;
+}
+
+
+
+
+@media (max-width: 768px) { 
+    .subscription {
+        padding: 20px 10px 20px 10px;
+    }   
+ }

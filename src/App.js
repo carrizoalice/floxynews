@@ -5,6 +5,7 @@ import NewsContainer from './NewsContainer';
 import Footer from './Footer'
 import Subheader from './Subheader'
 import FeaturedContainer from './FeaturedContainer' 
+import Subscription from './Subscription';
 
 
 function App(){
@@ -28,11 +29,12 @@ function App(){
           </div>
           <div className="col-12 col-lg-3 sidebar">
             <div className="row">
-                <div><img src="assets/banner_300_x_600_sidebar.gif"/></div>
+                <div className="col"><img src="assets/banner_300_x_600_sidebar.gif" className="img-fluid"/></div>
             </div>
           </div>
         </div>
-      </section>    
+      </section> 
+      <Subscription />   
       <Footer name="Floxy News"/>
     </div>
   );
