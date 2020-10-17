@@ -17,3 +17,10 @@
   color: #000;
   font-weight: 700;
 }
+
+.badge-floxy{
+  color: #fff;
+  background-color: #ff004f;
+  margin-bottom: .75rem;
+  border-radius: 0rem;
+}

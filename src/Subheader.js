@@ -11,6 +11,7 @@ const Subheader = ({nombre, compra, venta}) => (
                 </div>
             </div>                        
         </section>
+        
     )
 
 export default Subheader

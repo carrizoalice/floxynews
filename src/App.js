@@ -8,11 +8,10 @@ import FeaturedContainer from './FeaturedContainer'
 import Subscription from './Subscription';
 import SubheaderContainer from './SubheaderContainer' 
 
-
 function App(){
   return (
     <div className="app">
-      <Header name="Floxy News"/>   
+      <Header name="Floxy News"/>
       <SubheaderContainer/>
       <section className="featured"> 
         <div className="container">
