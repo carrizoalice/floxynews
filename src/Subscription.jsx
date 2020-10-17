@@ -8,8 +8,8 @@ function Subscription(props) {
                 <div className="row">
                     <div className="col col-md-7 col-lg-8 col-xl-8 text-center d-flex align-content-center flex-wrap">
                         <div className="col">
-                            <h2>Suscríbete a Club Floxy News</h2>
-                            <p>Recibí el diario en tu casa y disfrutá de todos los beneficios.</p>                        
+                            <h2>{props.title}</h2>
+                            <p>{props.subtitle}</p>                        
                             <button type="button" className="btn btn-outline-danger">¡QUIERO EL DIARIO!</button>
                         </div>
                     </div>

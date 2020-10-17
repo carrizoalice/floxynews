@@ -6,13 +6,14 @@ import Footer from './Footer'
 import Subheader from './Subheader'
 import FeaturedContainer from './FeaturedContainer' 
 import Subscription from './Subscription';
+import SubheaderContainer from './SubheaderContainer' 
 
 
 function App(){
   return (
     <div className="app">
       <Header name="Floxy News"/>   
-      <Subheader/>
+      <SubheaderContainer/>
       <section className="featured"> 
         <div className="container">
           <div className="row">
@@ -34,7 +35,7 @@ function App(){
           </div>
         </div>
       </section> 
-      <Subscription />   
+      <Subscription title="Suscríbete a Club Floxy News" subtitle="Recibí el diario en tu casa y disfrutá de todos los beneficios."/>   
       <Footer name="Floxy News"/>
     </div>
   );
