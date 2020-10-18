@@ -10,6 +10,7 @@ class SubheaderContainer extends React.Component {
             compra: '',
             venta: '',
         }
+        
     }
     
     componentDidMount(){        
@@ -17,6 +18,8 @@ class SubheaderContainer extends React.Component {
         .then(res => res.json())
         .then(CotizacionJson => this.setState({cotizacion: CotizacionJson[0].casa}))
     }
+
+    
 
     render() {
         const nombre = this.state.cotizacion.nombre
@@ -27,6 +30,7 @@ class SubheaderContainer extends React.Component {
         nombre = {nombre}
         compra = {compra}
         venta = {venta}
+
         /> 
     }
 }
