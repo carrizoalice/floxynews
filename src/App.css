@@ -112,7 +112,11 @@ span.city{
 .date-hour{
   color: #fff;
   text-align: center;
-  padding-top: 2%;
+  /* text-align: center;
+  padding-top: 2%; */
 }
 
-
+.hamburger{
+  padding-right: 10px;
+  float: left;
+}

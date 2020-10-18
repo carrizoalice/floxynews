@@ -1,5 +1,8 @@
 import React from 'react';
 import WeatherContainer from './WeatherContainer';
+import HamburgerMenu from "react-hamburger-menu/dist/HamburgerMenu";
+
+
 
 class Header extends React.Component{
     constructor(props){
@@ -9,6 +12,12 @@ class Header extends React.Component{
             date: new Date(),
         }
     } 
+
+    handleClick() {
+        this.setState({
+            open: !this.state.open
+        });
+    }
     
     render(){
         const opt = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
@@ -17,13 +26,25 @@ class Header extends React.Component{
         return(
             <nav className="navbar navbar-expand-lg justify-content-between navbar-dark nav-fxy">
                 <div className="container justify-content-center">
-                    <div className="col-3 col-md-4 col-lg-4 date"> 
-                                               
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">		  	
+                    <div className="col-4 col-md-4 col-lg-4 date">  
+                        <div className="hamburger">
+                            <HamburgerMenu
+                                isOpen = {this.state.open}
+                                menuClicked = { () => this.handleClick()}                        
+                                width = {36}
+                                height = {30}
+                                strokeWidth = {1}
+                                rotate = {0}
+                                color = 'black'
+                                borderRadius = {0}
+                                animationDuration = {0.5}
+                            />                              
+                        </div>                   
+                            {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">		  	
                             <span class="navbar-toggler-icon"></span>
                             </button>
                        
-                        {/* <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#home">Actualidad<span class="sr-only">(current)</span></a>
@@ -36,7 +57,7 @@ class Header extends React.Component{
                             </li>
                             </ul>
                         </div>                        */}
-                        <div className="mr-auto date-hour ">{date}</div>
+                        <div className="date-hour">{date}</div>
                     </div>
                     <div className="col-9 col-md-5 col-lg-4 justify-content-center logo">
                         <a href="#" className="navbar-brand"><h1 className="logo-font">{this.props.name}</h1></a>
