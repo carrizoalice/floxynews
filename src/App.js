@@ -17,11 +17,27 @@ class App extends React.Component{
     }    
   }
 
+  displayMenu(){
+    return (
+      <div className='site-nav'>
+              <div>chaucitos</div>
+      </div>
+    )
+  }
+
+//   displayMenu = () => {
+//     return (
+//         <div className='site-nav'>
+//                 <div>chaucitos</div>
+//         </div>
+//     )
+// }
+
 
   render(){
     return (
       <div className="app">
-        <Header name="Floxy News"/>
+        <Header name="Floxy News" clickMenu={this.displayMenu}/>
         <SubheaderContainer/>
         <section className="featured"> 
           <div className="container">

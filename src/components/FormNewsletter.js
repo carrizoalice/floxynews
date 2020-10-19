@@ -21,7 +21,7 @@ class FormNewsletter extends React.Component {
         
     }
 
-    handleSubmit(e){
+    handleSubmit(e){    
         e.preventDefault();     
         this.props.onAddEmail();   
         console.log(this.state);        
@@ -40,6 +40,7 @@ class FormNewsletter extends React.Component {
         )
     }    
 }
+
 
 
 

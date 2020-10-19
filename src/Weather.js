@@ -8,7 +8,7 @@ const Weather = ({name, temp, icon}) => (
                   <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="{name}"/>
               </div>               
               <div className="col-8 col-md-9 clime">
-                <span className="col temp">{temp}</span>
+                <span className="col temp">{temp}º</span>
                 <span className="col city">{name}</span>
               </div>              
           </div>                   

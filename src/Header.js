@@ -18,7 +18,16 @@ class Header extends React.Component{
             open: !this.state.open
         });
     }
-    
+
+    displayNavBar = () => {
+        this.props.displayMenu();
+        // return (
+        //     <div></div>
+            
+        // )
+    }
+
+      
     render(){
         const opt = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
         const date = this.state.date.toLocaleDateString("es-ES", opt)        
@@ -28,7 +37,7 @@ class Header extends React.Component{
                 <div className="container justify-content-center">
                     <div className="col-4 col-md-4 col-lg-4 date">  
                         <div className="hamburger">
-                            <HamburgerMenu
+                            <HamburgerMenu                                
                                 isOpen = {this.state.open}
                                 menuClicked = { () => this.handleClick()}                        
                                 width = {36}
@@ -39,7 +48,11 @@ class Header extends React.Component{
                                 borderRadius = {0}
                                 animationDuration = {0.5}
                             />                              
-                        </div>                   
+                        </div>   
+                        <div>
+                        { this.state.open ?  this.props.displayMenu() : null}
+                        {window.innerWidth > 1200 ? this.displayNavBar() : this.displayHamburgerMenu()}    
+                        </div>                
                             {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">		  	
                             <span class="navbar-toggler-icon"></span>
                             </button>

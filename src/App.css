@@ -120,3 +120,17 @@ span.city{
   padding-right: 10px;
   float: left;
 }
+
+.site-nav{
+    position: fixed;
+    top: 60px;
+    overflow-y: scroll;
+    background-color: #292929; 
+    width: 100%;
+    position: relative;
+    top: -32px;
+    bottom: 0;
+    padding: 57px 0 153px;
+    z-index: 9999;
+
+}
