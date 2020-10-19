@@ -17,27 +17,25 @@ class App extends React.Component{
     }    
   }
 
-  displayMenu(){
+  displayMobileMenu = () => {
     return (
-      <div className='site-nav'>
-              <div>chaucitos</div>
-      </div>
+        <section className="site-nav">
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                    SECCIONES
+                </div>
+              </div>
+            </div>
+        </section>
     )
-  }
-
-//   displayMenu = () => {
-//     return (
-//         <div className='site-nav'>
-//                 <div>chaucitos</div>
-//         </div>
-//     )
-// }
+}
 
 
   render(){
     return (
       <div className="app">
-        <Header name="Floxy News" clickMenu={this.displayMenu}/>
+        <Header name="Floxy News" clickMenu={this.displayMobileMenu}/>
         <SubheaderContainer/>
         <section className="featured"> 
           <div className="container">

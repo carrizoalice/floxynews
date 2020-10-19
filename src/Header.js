@@ -20,12 +20,12 @@ class Header extends React.Component{
     }
 
     displayNavBar = () => {
-        // this.props.displayMenu();
-        // return (
-        //     <div></div>
-            
-        // )
+        return (
+            <ul className='nav'></ul>  
+        )
     }
+
+
 
       
     render(){
@@ -49,10 +49,10 @@ class Header extends React.Component{
                                 animationDuration = {0.5}
                             />                              
                         </div>   
-                        {/* <div>
-                        { this.state.open ?  this.props.displayMenu() : null}
-                        {window.innerWidth > 1200 ? this.displayNavBar() : this.displayHamburgerMenu()}    
-                        </div>                 */}
+                        <div>
+                        { this.state.open ?  this.props.clickMenu() : null}
+                        {window.innerWidth > 1200 ? this.displayNavBar() : this.displayNavBar()}
+                        </div>                
                             {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">		  	
                             <span class="navbar-toggler-icon"></span>
                             </button>
