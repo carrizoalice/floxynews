@@ -20,7 +20,7 @@ class Header extends React.Component{
     }
 
     displayNavBar = () => {
-        this.props.displayMenu();
+        // this.props.displayMenu();
         // return (
         //     <div></div>
             
@@ -49,10 +49,10 @@ class Header extends React.Component{
                                 animationDuration = {0.5}
                             />                              
                         </div>   
-                        <div>
+                        {/* <div>
                         { this.state.open ?  this.props.displayMenu() : null}
                         {window.innerWidth > 1200 ? this.displayNavBar() : this.displayHamburgerMenu()}    
-                        </div>                
+                        </div>                 */}
                             {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">		  	
                             <span class="navbar-toggler-icon"></span>
                             </button>
