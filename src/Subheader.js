@@ -1,6 +1,7 @@
 import React from 'react';
 import './subheader.css';
 import Modal from "react-bootstrap/Modal";
+import FormNewsletter from './components/FormNewsletter'
 
 const Subheader = ({nombre, compra, venta}) => {  
     
@@ -40,12 +41,8 @@ const Subheader = ({nombre, compra, venta}) => {
             </Modal.Header>
             <Modal.Body>
             Recibí lo mejor de Floxy News en tu casilla de E-mail
-            <form>
-                <label className="label-fxy">
-                <input className="input-modal-fxy" type="text" name="name" placeholder="Introduce tu e-mail"/>
-                </label><br/>
-                <input type="submit" value="Enviar" />
-            </form>
+            <FormNewsletter onAddEmail={hideModal}/>
+            
             </Modal.Body>
             {/* <Modal.Footer>
             <button onClick={hideModal}>Cancel</button>
