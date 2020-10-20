@@ -8,7 +8,7 @@ class NewsContainer extends React.Component{
         super(props)
 
         this.state ={
-            news: ['0'],
+            news: [''],
         }
     }  
     async componentDidMount(){
@@ -27,8 +27,10 @@ class NewsContainer extends React.Component{
         publishedAt = {news.publishedAt}
         title = {news.title}
         description = {news.description}
-        key={news.generatorID}/>)
-        )       
+        key={news.generatorID}/>       
+        
+        )
+       )       
         
     }
     

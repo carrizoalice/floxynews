@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './App.css';
+import NewsExtends from './components/NewsExtends'
 
 
 ReactDOM.render(

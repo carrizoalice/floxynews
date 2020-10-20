@@ -6,7 +6,8 @@ import Footer from './Footer'
 import FeaturedContainer from './FeaturedContainer' 
 import Subscription from './Subscription';
 import SubheaderContainer from './SubheaderContainer' 
-
+import  Menuitems from './components/Menuitems'
+import './components/navbar.css'
 
 class App extends React.Component{
   constructor(props) {
@@ -17,13 +18,35 @@ class App extends React.Component{
     }    
   }
 
+  state = {clicked: false}
+
+  handleClick = () =>{
+      this.setState({ clicked: !this.state.clicked})
+  }
+
   displayMobileMenu = () => {
     return (
         <section className="site-nav">
             <div className="container">
               <div className="row">
                 <div className="col">
-                    SECCIONES
+                  <span class="nav-hamb-title">SECCIONES</span>
+                  <div className="navbar-hamb">
+                      <div onClick={this.handleClick}>
+                          <i className={this.state.clicked ? 'P' : 'R'}></i>
+                      </div>
+                      <ul>
+                          {Menuitems.map((item, index)=>{
+                              return(
+                                <li key={index}>
+                                    <a className={item.cName} href={item.url}>
+                                    {item.title}
+                                    </a>
+                                </li>
+                              )
+                          })} 
+                      </ul>
+                  </div>
                 </div>
               </div>
             </div>

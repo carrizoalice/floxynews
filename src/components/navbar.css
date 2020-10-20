@@ -1,0 +1,18 @@
+.navbar-hamb{
+    padding-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-hamb a{
+    color: #fff;
+}
+
+.navbar-hamb li{
+    list-style: none;
+}
+
+.nav-hamb-title{
+    font-size: 30px;
+    color: #ff004f;  
+}

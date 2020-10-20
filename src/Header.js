@@ -3,7 +3,6 @@ import WeatherContainer from './WeatherContainer';
 import HamburgerMenu from "react-hamburger-menu/dist/HamburgerMenu";
 
 
-
 class Header extends React.Component{
     constructor(props){
         super(props)
@@ -25,8 +24,6 @@ class Header extends React.Component{
         )
     }
 
-
-
       
     render(){
         const opt = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
@@ -46,7 +43,7 @@ class Header extends React.Component{
                                 rotate = {0}
                                 color = 'black'
                                 borderRadius = {0}
-                                animationDuration = {0.5}
+                                animationDuration = {0.5}                                
                             />                              
                         </div>   
                         <div>
