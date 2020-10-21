@@ -22,8 +22,7 @@ class Header extends React.Component{
         return (
             <ul className='nav'></ul>  
         )
-    }
-
+    }   
       
     render(){
         const opt = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
@@ -70,10 +69,10 @@ class Header extends React.Component{
                         <div className="date-hour">{date}</div>
                     </div>
                     <div className="col-9 col-md-5 col-lg-4 justify-content-center logo">
-                        <a href="#" className="navbar-brand"><h1 className="logo-font">{this.props.name}</h1></a>
+                        <a href="/" className="navbar-brand"><h1 className="logo-font">{this.props.name}</h1></a>
                     </div>
                     <div className="d-none d-md-block col-md-1 col-lg-1 text-center col-transit">
-                         <img src="assets/transito.png" alt="transito" className="header-transit"/>
+                         <img onClick={this.handleBusState} src="assets/transito.png" alt="transito" className="header-transit"/>
                     </div>               
                     <div className="d-none d-md-block col-sm-2 col-md-3 col-lg-3">
                         <WeatherContainer />

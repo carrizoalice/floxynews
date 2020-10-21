@@ -1,13 +1,19 @@
 import React from 'react'
 import Header from './Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NewsContainer from './NewsContainer';
+import Home from './pages/Home'
 import Footer from './Footer'
-import FeaturedContainer from './FeaturedContainer' 
 import Subscription from './Subscription';
 import SubheaderContainer from './SubheaderContainer' 
-import  Menuitems from './components/Menuitems'
+import Menuitems from './components/Menuitems'
 import './components/navbar.css'
+import Politica from './pages/Politica'
+import Economia from './pages/Economia'
+import Sociedad from './pages/Sociedad'
+import Espectaculos from './pages/Espectaculos'
+import { Route, BrowserRouter as Router} from "react-router-dom"
+
+
 
 class App extends React.Component{
   constructor(props) {
@@ -57,35 +63,20 @@ class App extends React.Component{
 
   render(){
     return (
+      <Router>
       <div className="app">
         <Header name="Floxy News" clickMenu={this.displayMobileMenu}/>
-        <SubheaderContainer/>
-        <section className="featured"> 
-          <div className="container">
-            <div className="row">
-            <FeaturedContainer /> 
-            </div>
-          </div>
-        </section>   
-        <section className="news-section">
-          <div className="container">
-            <div className="col-12 col-lg-9 news">
-              <div className="row">
-                <NewsContainer onAddEmail={this.handleAddEmail}/>
-              </div>
-            </div>
-            <div className="col-12 col-lg-3 sidebar">
-              <div className="row">
-                  <div className="col"><img src="assets/banner_300_x_600_sidebar.gif" className="img-fluid"/></div>
-              </div>
-            </div>
-          </div>
-        </section> 
+        <SubheaderContainer/>    
+        <Route path="/" component={Home} exact/> 
+        <Route path="/Politica" component={Politica}/>
+        <Route path="/Economia" component={Economia} exact/> 
+        <Route path="/Sociedad" component={Sociedad} exact/>     
+        <Route path="/Espectaculos" component={Espectaculos} />              
         <Subscription title="Suscríbete a Club Floxy News" subtitle="Recibí el diario en tu casa y disfrutá de todos los beneficios."/>   
         <Footer name="Floxy News"/>
       </div>
-    );
-  
+      </Router>
+    );  
   }
 }
 
