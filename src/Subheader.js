@@ -3,7 +3,7 @@ import './subheader.css';
 import Modal from "react-bootstrap/Modal";
 import FormNewsletter from './components/FormNewsletter'
 
-const Subheader = ({nombre, compra, venta}) => {  
+const Subheader = ({nombre, compra, venta, nombreblue, comprablue, ventablue}) => {  
     
   const [isOpen, setIsOpen] = React.useState(false);
   const [title, setTitle] = React.useState("Transitioning...");
@@ -22,7 +22,8 @@ const Subheader = ({nombre, compra, venta}) => {
         <section className="subheader">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-8">{nombre}: {compra} - {venta}</div> 
+                    <div className="col-lg-8"><strong>{nombre}</strong>: {compra} - {venta} / 
+                    <strong> {nombreblue}:</strong> {comprablue} - {ventablue}</div>  
                     <div className="col-lg-2">
                         <button className="btn btn-outline-floxy" onClick={showModal}>Recibí newsletters</button>
                         </div>
