@@ -20,3 +20,33 @@
 .content-card{
     margin-top: 30%;
 }
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+    
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+    .txt-featured{
+        font-size: 1.10rem!important;
+    }
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+
+
+}  
+
+

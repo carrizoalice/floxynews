@@ -3,6 +3,8 @@
 
 body{
   font-family: 'Exo 2', sans-serif;
+  margin: 0!important;
+  padding: 0!important;
 }
 
 
@@ -19,10 +21,11 @@ body{
 
 .logo-font{
   font-weight: 900;
+
 }
-.container{
+/* .container{
   max-width: 1800px!important;
-}
+} */
 
 .container-fluid{
   margin: 0!important;
@@ -61,19 +64,20 @@ body{
   color: #fff;
   font-weight: 100;
 }
+
 .clime{  
   text-align: center;
 }
 
 span.temp{
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: 500;
   display: block;
   /* margin-bottom: 20px;   */
 }
 
 span.city{
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 300;
   /* position: absolute;
   margin-top: 39px; */
@@ -101,17 +105,30 @@ span.city{
   padding: 15px;
 }
 
+@media (max-width: 280px){ 
+    .logo-font{
+      font-size: 1.5rem;
+    }
+
+}
+
+
+
+
 @media (min-width: 992px){
   .navbar-expand-lg .navbar-toggler {
       display: block;
       float: left;
       margin-right: 15px;
     }  
-}
+    
+   }
+
 
 .date-hour{
   color: #fff;
   text-align: center;
+  font-size: 0.9em;;
   /* text-align: center;
   padding-top: 2%; */
 }
@@ -142,6 +159,39 @@ span.city{
 .secciones-genericas-proximamente .container .row{
   text-align: center;
   height: 500px;
-  font-size: 50px;
+  font-size: 2em;
   align-items: center;
 }
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+ 
+
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+ .temp{
+   font-size: 15px;
+ }
+
+ .navbar{
+  padding: 0rem 0rem;
+ }
+ 
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+
+}  

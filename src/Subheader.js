@@ -22,12 +22,12 @@ const Subheader = ({nombre, compra, venta, nombreblue, comprablue, ventablue}) =
         <section className="subheader">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-8"><strong>{nombre}</strong>: {compra} - {venta} / 
+                    <div className="col-12 col-xs-8 col-md-7 col-lg-7"><strong>{nombre}</strong>: {compra} - {venta} / 
                     <strong> {nombreblue}:</strong> {comprablue} - {ventablue}</div>  
-                    <div className="col-lg-2">
+                    <div className="col-12 col-xs-4 col-md-3 col-lg-3">
                         <button className="btn btn-outline-floxy" onClick={showModal}>Recibí newsletters</button>
                         </div>
-                    <div className="col-lg-2">Buscar</div>
+                    <div className="d-none xs-2 col-md-2 d-lg-block col-lg-2 center">Buscar</div>
                 </div>
             </div>    
             <Modal 

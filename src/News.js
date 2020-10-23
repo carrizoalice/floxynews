@@ -34,7 +34,7 @@ import NewsExtends from './components/NewsExtends'
               <div class="badges">
                   <span class="badge badge-floxy">{name}</span>
               </div>        
-              <h5 className="card-title" onClick={sendText}><NewsExtends sendTitle={title}/></h5>
+              <h5 className="card-title">{title}</h5>
               <p className="card-text">{description} </p>
               <p className="card-text"><small className="text-muted">{publishedAt}</small></p>
             </div>

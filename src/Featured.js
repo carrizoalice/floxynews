@@ -7,7 +7,7 @@ const Featured = ({title, urlToImage, description}) => (
         <img className="card-img" src={urlToImage} alt={title}/> 
         <div class="card-img-overlay">
             <div className="content-card">
-                <h5 class="card-title">{title}</h5>
+                <h5 class="card-title txt-featured">{title}</h5>
                 <p class="card-text">{description}</p>
             </div>
         </div>

@@ -24,3 +24,29 @@
   margin-bottom: .75rem;
   border-radius: 0rem;
 }
+
+
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+ 
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+  
+}
+
+@media only screen and (max-width: 575px) {
+  .news-section .card-img-top {    
+    height: 46vw;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+   
+
+}
+
