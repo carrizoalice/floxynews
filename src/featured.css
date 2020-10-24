@@ -42,10 +42,18 @@
 
 }
 
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1200px) {
+    .featured .card-text{
+        display: none;
+    }
+
+} 
+
 
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (max-width: 1024px) {
-
+    
 
 }  
 

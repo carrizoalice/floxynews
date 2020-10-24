@@ -60,6 +60,22 @@ body{
   font-weight: 900;
 }
 
+.footer-title{
+  color:#ffc107;
+  display: block;
+  padding-bottom: 10px;;
+}
+
+.footer .redes img{
+  width: 40px;
+  height: auto;
+  padding-left: 5px;
+}
+
+.footer .redes{
+  display: inline-block;
+}
+
 .header-weather{
   color: #fff;
   font-weight: 100;
