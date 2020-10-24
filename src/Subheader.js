@@ -1,5 +1,6 @@
 import React from 'react';
 import './subheader.css';
+import './css/floxygrilla.css';
 import Modal from "react-bootstrap/Modal";
 import FormNewsletter from './components/FormNewsletter'
 
@@ -27,7 +28,7 @@ const Subheader = ({nombre, compra, venta, nombreblue, comprablue, ventablue}) =
                     <div className="col-12 col-xs-4 col-md-3 col-lg-3">
                         <button className="btn btn-outline-floxy" onClick={showModal}>Recibí newsletters</button>
                         </div>
-                    <div className="d-none xs-2 col-md-2 d-lg-block col-lg-2 center">Floxygrilla</div>
+                    <div className="d-none xs-2 col-md-2 d-lg-block col-lg-2 center fly-grilla"><a href="/Floxygrilla">Floxygrilla</a></div>
                 </div>
             </div>    
             <Modal 
