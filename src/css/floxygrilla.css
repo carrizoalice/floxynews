@@ -4,5 +4,50 @@
 }
 
 .floxygrilla{
-    font-size: 12px;
+    font-size: 8px;
+  }
+
+  .fxy-title{
+      font-size: 32px!important;
+      font-weight: 700;
+     margin-bottom: 15px!important;
+  }
+
+.floxygrilla .container .row{
+    padding-top: 30px;
+    display: flex;
+  }
+  
+  .floxygrilla .container .row{
+    height: 500px;
+    font-size: 2em;
+  }
+
+
+.modal-floxy .modal-content{
+    background-color: #fff;
+}
+
+.modal-floxy .modal-title{
+    color: #ff004f!important;
+}
+
+.btn-info-fxy{
+    margin-top: 15px;
+    color: #fff;
+    background-color: #ff004f;
+    border-color: #ff004f;
+}
+
+.btn-info-fxy:hover{
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+
+@media (min-width: 992px){
+    .modal-floxy {
+        max-width: 1189px;
+    }
 }
