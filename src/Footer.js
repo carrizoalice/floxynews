@@ -6,7 +6,7 @@ function Footer(props){
             <div className="container">
                 <div className="row footer-menu">
                     <div className="col-12 col-sm-6 col-lg-3">
-                        <span class="footer-title">Temas para ver</span>
+                        <span className="footer-title">Temas para ver</span>
                         <ul>
                             <li>Coronavirus</li> 
                             <li>Tarjeta alimentar</li>
@@ -15,7 +15,7 @@ function Footer(props){
                         </ul>
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3">
-                        <span class="footer-title">Secciones</span>
+                        <span className="footer-title">Secciones</span>
                         <ul>
                             <li>Política</li>
                             <li>Policiales</li> 
@@ -23,14 +23,14 @@ function Footer(props){
                         </ul>
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3">
-                        <span class="footer-title">Entretenimientos</span>
+                        <span className="footer-title">Entretenimientos</span>
                         <ul>
                             <li>Espectáculos</li>
                             <li>Televisión</li>
                         </ul>
                     </div>
                     <div className="col-12 col-sm-6 col-lg-3">
-                        <span class="footer-title">Redes Sociales</span>
+                        <span className="footer-title">Redes Sociales</span>
                         <div className="redes"><img src="assets/facebook.png"/></div>
                         <div className="redes"><img src="assets/twitter.png"/></div>
                         <div className="redes"><img src="assets/instagram.png"/></div>
