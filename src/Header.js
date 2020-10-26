@@ -55,7 +55,7 @@ class Header extends React.Component{
                         <a href="/" className="navbar-brand"><h1 className="logo-font">{this.props.name}</h1></a>
                     </div>
                     <div className="d-none d-md-none d-lg-block col-lg-1 text-center col-transit">
-                         <img onClick={this.handleBusState} src="assets/transito.png" alt="transito" className="header-transit"/>
+                         <a href="/Transito"><img src="assets/transito.png" alt="transito" className="header-transit"/></a>
                     </div>               
                     <div className="d-none col-md-2 d-lg-block col-md-5 col-lg-3">
                         <WeatherContainer />

@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './App.css';
 import NewsExtends from './components/NewsExtends'
+import CorteContainer from './CorteContainer';
 
 
 ReactDOM.render(

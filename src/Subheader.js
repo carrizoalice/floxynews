@@ -1,6 +1,5 @@
 import React from 'react';
 import './subheader.css';
-import './css/floxygrilla.css';
 import Modal from "react-bootstrap/Modal";
 import FormNewsletter from './components/FormNewsletter'
 

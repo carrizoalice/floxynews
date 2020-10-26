@@ -12,7 +12,9 @@ import Economia from './pages/Economia'
 import Sociedad from './pages/Sociedad'
 import Espectaculos from './pages/Espectaculos'
 import Floxygrilla from './pages/Floxygrilla'
+import Transito from './pages/Transito'
 import { Route, BrowserRouter as Router} from "react-router-dom"
+
 
 
 
@@ -73,9 +75,10 @@ class App extends React.Component{
         <Route path="/Economia" component={Economia} exact/> 
         <Route path="/Sociedad" component={Sociedad} exact/>     
         <Route path="/Espectaculos" component={Espectaculos} />
-        <Route path="/Floxygrilla" component={Floxygrilla} />               
+        <Route path="/Floxygrilla" component={Floxygrilla} />  
+        <Route path="/Transito" component={Transito} />              
         <Subscription title="Suscríbete a Club Floxy News" subtitle="Recibí el diario en tu casa y disfrutá de todos los beneficios."/>   
-        <Footer name="Floxy News"/>
+        <Footer name="Floxy News"/>        
       </div>
       </Router>
     );  

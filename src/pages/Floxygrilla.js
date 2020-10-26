@@ -55,9 +55,9 @@ import '../css/floxygrilla.css'
                     <Modal.Title id="contained-modal-title-vcenter">Floxygrilla</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                    Seleccioná una palabra y para comenzar el juego                   
+                    Seleccioná una palabra para comenzar el juego                   
                     <Modal.Footer>
-                        <button onClick={hideModal}>Cancel</button>
+                        <button onClick={hideModal}>Cerrar</button>
                     </Modal.Footer>                  
                     </Modal.Body>
                     <Iframe iframe={iframe} />
