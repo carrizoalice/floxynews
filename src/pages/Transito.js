@@ -18,10 +18,9 @@ class Transito extends React.Component{
     return (
         <div className="transito">
         <div className="container">
+          <div className="row"><span className="title-transito">El tránsito en C.A.B.A</span></div>
           <div className="row">
-            <div className="col">
-                <CorteContainer />
-            </div>
+                <CorteContainer />            
           </div>
         </div>         
       </div>  

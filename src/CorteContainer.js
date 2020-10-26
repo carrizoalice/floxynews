@@ -26,6 +26,7 @@ class CorteContainer extends React.Component{
         id = {corte.id} 
         updatetime = {corte.updatetime} 
         location = {corte.location} 
+        reference = {corte.reference}
         key={corte.generatorID}
         />               
         )

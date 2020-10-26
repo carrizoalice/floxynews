@@ -1,15 +1,20 @@
 /* .transito a{
     color: #fff;
     text-decoration: none;
-}
-  .transito{
-      font-size: 18px!important;
+}*/
+  .transito span{
+      font-size: 30px!important;
   }
 
 .transito .container .row{
     padding-top: 30px;
   }
   
-  .transito .container .row{
+  /* .transito .container .row{
     height: 500px;
-  } */
+  }  */
+
+  .card-style{
+    margin-bottom: 15px;
+    border: 0px solid rgba(0,0,0,.125);
+  }

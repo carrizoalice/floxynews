@@ -15,13 +15,14 @@ class Corte extends React.Component {
      const {id} = this.props
      const {updatetime} = this.props
      const {location} = this.props
-    
+     const {reference} = this.props
  
-      return(                
+      return(            
+        <div className="col-sm-6 col-md-4 col-lg-6 col-xl-6 card-style"> 
                 <div class="card">
-                {/* <img src="..." class="card-img-top" alt="..."> */}
+                <img className="card-img-top" src="" alt=""/>                   
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Referencia: {reference}</h5>
                   <p class="card-text">{description}</p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -34,6 +35,7 @@ class Corte extends React.Component {
                   <a href="#" class="card-link">Another link</a>
                 </div>
               </div>
+        </div>              
       )
     }
     
