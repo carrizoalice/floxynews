@@ -30,7 +30,7 @@ import '../css/floxygrilla.css'
                     <div className="container">
                         <div className="row">
                             <div className="col">                                
-                                <span className="fxy-title">Descripción</span>
+                                <span className="fxy-title">Floxygrilla</span>
                                 <p>El clásico juego de las palabras con una distribución de letras ideal para jugar con el vocabulario castellano.</p>
                                 <span className="fxy-title">Reglas</span>
                                 <p>• Las palabras se escriben en forma vertical u horizontal.<br/>

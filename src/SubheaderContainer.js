@@ -14,14 +14,14 @@ class SubheaderContainer extends React.Component {
             ventablue: '',
         }
         
+        
     }
-    
+   
     componentDidMount(){        
         fetch(`https://www.dolarsi.com/api/api.php?type=valoresprincipales`)
         .then(res => res.json())
         .then(CotizacionJson => this.setState({cotizacion: CotizacionJson[0].casa, cotizacionblue: CotizacionJson[1].casa}))
     }
-
 
     render() {
         const nombre = this.state.cotizacion.nombre

@@ -24,10 +24,10 @@ const Subheader = ({nombre, compra, venta, nombreblue, comprablue, ventablue}) =
                 <div className="row">
                     <div className="col-12 col-xs-8 col-md-7 col-lg-7"><strong>{nombre}</strong>: {compra} - {venta} / 
                     <strong> {nombreblue}:</strong> {comprablue} - {ventablue}</div>  
-                    <div className="col-12 col-xs-4 col-md-3 col-lg-3">
+                    <div className="col-12 col-xs-4 col-md-3 col-lg-3 text-center">
                         <button className="btn btn-outline-floxy" onClick={showModal}>Recibí newsletters</button>
                         </div>
-                    <div className="d-none xs-2 col-md-2 d-lg-block col-lg-2 center fly-grilla"><a href="/Floxygrilla">Floxygrilla</a></div>
+                    <div className="d-none xs-2 col-md-2 d-lg-block col-lg-2 center fly-grilla text-center"><a href="/Floxygrilla">Floxygrilla</a></div>
                 </div>
             </div>    
             <Modal 

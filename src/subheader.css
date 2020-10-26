@@ -16,14 +16,12 @@
 
     color: #212529;
     background-color: #ffc107;
-    border-color: #ffc107;
 }
 
 .btn-outline-floxy:hover{
-    color: #000;
+    color: #fff;
     font-weight: 700;
-    background-color: #ffca29;
-    border-color: #ffc107;
+    background-color: #B4378C;
 }
 
 .btn-outline-floxy:focus{
