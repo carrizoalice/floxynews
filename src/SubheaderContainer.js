@@ -22,7 +22,6 @@ class SubheaderContainer extends React.Component {
         .then(CotizacionJson => this.setState({cotizacion: CotizacionJson[0].casa, cotizacionblue: CotizacionJson[1].casa}))
     }
 
-    
 
     render() {
         const nombre = this.state.cotizacion.nombre
@@ -31,6 +30,8 @@ class SubheaderContainer extends React.Component {
         const nombreblue = this.state.cotizacionblue.nombre
         const comprablue = this.state.cotizacionblue.compra
         const ventablue = this.state.cotizacionblue.venta
+
+        
 
         return <Subheader 
         nombre = {nombre}

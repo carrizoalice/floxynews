@@ -8,33 +8,27 @@ class CorteContainer extends React.Component{
         super(props)
 
         this.state ={
-            corte: [''],
+            corte: ['']
         }
     }  
     async componentDidMount(){
         const responseJson = await getCortesGobAr()
-        // this.setState({corte: responseJson.incidents[0].description})
         this.setState({corte: responseJson.incidents})
     }
+    
 
-    render(){
-        const name = this.state.corte
-
+    render(){      
         return(
-        // <Corte name = {name}/>
         this.state.corte.map((corte) => <Corte 
-        description= {corte.description} 
+        description = {corte.description} 
         id = {corte.id} 
         updatetime = {corte.updatetime} 
-        location = {corte.location} 
         reference = {corte.reference}
-        key={corte.generatorID}
-        />               
+        key = {corte.id}         
+        />     
         )
-       )       
-        
-    }
-    
+       )
+    }    
 }
 
 export default CorteContainer

@@ -14,8 +14,8 @@ class Corte extends React.Component {
      const {description} = this.props
      const {id} = this.props
      const {updatetime} = this.props
-     const {location} = this.props
-     const {reference} = this.props     
+     const {reference} = this.props 
+     const {street} = this.props     
  
       return(            
         <div className="col-sm-6 col-md-4 col-lg-6 col-xl-6 card-style"> 
@@ -27,7 +27,7 @@ class Corte extends React.Component {
                 </div>
                 <ul class="list-group list-group-flush">
                 <li class="list-group-item">{updatetime}</li>
-                <li class="list-group-item"></li>
+              <li class="list-group-item">{street}</li>
                 </ul>
               </div>
         </div>              
