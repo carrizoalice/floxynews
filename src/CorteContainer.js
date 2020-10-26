@@ -19,6 +19,7 @@ class CorteContainer extends React.Component{
 
     render(){
         const name = this.state.corte
+
         return(
         // <Corte name = {name}/>
         this.state.corte.map((corte) => <Corte 
