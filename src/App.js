@@ -14,7 +14,7 @@ import Espectaculos from './pages/Espectaculos'
 import Floxygrilla from './pages/Floxygrilla'
 import Transito from './pages/Transito'
 import { Route, BrowserRouter as Router} from "react-router-dom"
-
+import { HashRouter, Route, Link } from "react-router-dom";
 
 
 
@@ -66,7 +66,7 @@ class App extends React.Component{
 
   render(){
     return (
-      <Router>
+      <HashRouter basename='/'>
       <div className="app">
         <Header name="Floxy News" clickMenu={this.displayMobileMenu}/>
         <SubheaderContainer/>    
@@ -80,7 +80,7 @@ class App extends React.Component{
         <Subscription title="Suscríbete a Club Floxy News" subtitle="Recibí el diario en tu casa y disfrutá de todos los beneficios."/>   
         <Footer name="Floxy News"/>        
       </div>
-      </Router>
+      </HashRouter>
     );  
   }
 }
