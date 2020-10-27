@@ -6,12 +6,15 @@ import * as serviceWorker from './serviceWorker';
 import './App.css';
 import NewsExtends from './components/NewsExtends'
 import CorteContainer from './CorteContainer';
+import {BrowserRouter} from 'react-router-dom'
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App/>
-  </React.StrictMode>,
+  {/* // </React.StrictMode>, */}
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
