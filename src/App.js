@@ -14,7 +14,7 @@ import Espectaculos from './pages/Espectaculos'
 import Floxygrilla from './pages/Floxygrilla'
 import Transito from './pages/Transito'
 import { Route, BrowserRouter as Router} from "react-router-dom"
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Link } from "react-router-dom";
 
 
 
