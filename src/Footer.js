@@ -33,7 +33,7 @@ function Footer(props){
                         <span className="footer-title">Redes Sociales</span>
                         <div className="redes"><img src="assets/facebook.png"/></div>
                         <div className="redes"><img src="assets/twitter.png"/></div>
-                        <div className="redes"><img src="assets/instagram.png"/></div>
+                        <div className="redes"><img src="assets/youtube.png"/></div>
                     </div>
                 </div>
                 <div className="row footer-base">
